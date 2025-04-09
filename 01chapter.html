@@ -5,13 +5,17 @@
 <title>Thesis trial :D</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add Google Fonts for Human Sans-like font (e.g., 'Helvetica') -->
+<link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica', Arial, sans-serif; /* Use Helvetica or a similar font */
+  margin: 0;
+  padding: 0;
 }
 
 /* Style the header */
@@ -23,27 +27,48 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Create two columns/boxes that float next to each other */
 nav {
   float: left;
   width: 15%;
-  height: 300px; /* only for demonstration, should be removed */
   background: #cdeefc;
   padding: 20px;
+  text-align: center; /* Center the content in the navigation */
 }
 
-/* Style the list inside the menu */
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
+nav ul li {
+  margin: 15px 0;
+}
+
+/* Style the clickable buttons */
+nav ul li a {
+  display: inline-block;
+  background-color: #2C3E50; /* Dark blue background for buttons */
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%; /* Make buttons fill the width of the nav */
+  text-align: center; /* Center the text inside the buttons */
+}
+
+nav ul li a:hover {
+  background-color: #34495E; /* Slightly darker blue on hover */
+}
+
+/* Style the main content area */
 article {
   float: left;
   padding: 20px;
   width: 70%;
   background-color: #fffafa;
-  height: 300px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -75,7 +100,6 @@ footer {
   <h2>Thesis trial</h2>
   <p>This is just a trial!</p>
 </header>
-
 
 <section>
   <nav>
