@@ -23,27 +23,47 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Create two columns/boxes that float next to each other */
 nav {
   float: left;
   width: 15%;
-  height: 300px; /* only for demonstration, should be removed */
   background: #cdeefc;
   padding: 20px;
 }
 
-/* Style the list inside the menu */
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
+nav ul li {
+  margin: 15px 0;
+}
+
+/* Style the clickable buttons */
+nav ul li a {
+  display: inline-block;
+  background-color: #2C3E50; /* Dark blue background for buttons */
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%; /* Make buttons fill the width of the nav */
+  text-align: center; /* Center the text inside the buttons */
+}
+
+nav ul li a:hover {
+  background-color: #34495E; /* Slightly darker blue on hover */
+}
+
+/* Style the main content area */
 article {
   float: left;
   padding: 20px;
   width: 70%;
   background-color: #fffafa;
-  height: 300px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -76,7 +96,6 @@ footer {
   <p>This is just a trial!</p>
 </header>
 
-
 <section>
   <nav>
     <ul>
@@ -90,7 +109,7 @@ footer {
   <article>
     <h1>Chapter 3</h1>
     <p>In Chapter 3, we investigate moderators of the prospective associations between prenatal maternal depression and child mental health.</p>
-    <p>A preregistration of this project can be found <a href="https://osf.io/264s9">here</a>.</p> 
+    <p>A preregistration of this project can be found <a href="https://osf.io/264s9">here</a>.</p>
   </article>
 </section>
 
