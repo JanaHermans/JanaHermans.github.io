@@ -5,7 +5,6 @@
 <title>Thesis trial :D</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Add Google Fonts for Human Sans-like font (e.g., 'Helvetica') -->
 <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
 <style>
 * {
@@ -13,9 +12,27 @@
 }
 
 body {
-  font-family: 'Helvetica', Arial, sans-serif; /* Use Helvetica or a similar font */
+  font-family: 'Helvetica', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Hero image section */
+.hero {
+  background-image: url('image1.JPG');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 /* Style the header */
@@ -27,13 +44,13 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that float next to each other */
+/* Navigation column */
 nav {
   float: left;
   width: 15%;
   background: #cdeefc;
   padding: 20px;
-  text-align: center; /* Center the content in the navigation */
+  text-align: center;
 }
 
 nav ul {
@@ -46,24 +63,23 @@ nav ul li {
   margin: 15px 0;
 }
 
-/* Style the clickable buttons */
 nav ul li a {
   display: inline-block;
-  background-color: #75abe1; /* Dark blue background for buttons */
+  background-color: #75abe1;
   color: white;
   padding: 12px 20px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 18px;
-  width: 100%; /* Make buttons fill the width of the nav */
-  text-align: center; /* Center the text inside the buttons */
+  width: 100%;
+  text-align: center;
 }
 
 nav ul li a:hover {
-  background-color: #5a91c6; /* Slightly darker blue on hover */
+  background-color: #5a91c6;
 }
 
-/* Style the main content area */
+/* Main content area */
 article {
   float: left;
   padding: 20px;
@@ -71,20 +87,19 @@ article {
   background-color: #fffafa;
 }
 
-/* Make the image responsive */
 article img {
   max-width: 100%;
   height: auto;
 }
 
-/* Clear floats after the columns */
+/* Clear floats */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
+/* Footer */
 footer {
   background-color: #bf95d0;
   padding: 10px;
@@ -92,16 +107,28 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* Responsive layout */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
     height: auto;
   }
+
+  .hero {
+    font-size: 32px;
+    padding: 20px;
+  }
 }
 </style>
 </head>
 <body>
+
+<!-- Hero section -->
+<div class="hero">
+  Welcome to My Thesis Trial
+</div>
+
+<!-- Header and main content -->
 <header>
   <h2>Thesis trial</h2>
   <p>This is just a trial!</p>
