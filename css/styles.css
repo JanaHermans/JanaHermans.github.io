@@ -147,6 +147,8 @@
     display: block;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.65em;
-    margin-top: 4px;
+    margin-top: 2px; /* Slightly tighter spacing */
+    line-height: 1.2;
   }
+  
     
