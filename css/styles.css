@@ -97,10 +97,11 @@
   /* Footer */
   footer {
     background-color: #599c9f;
-    padding: 10px;
+    padding: 20px 10px; /* Increased vertical padding */
     text-align: center;
     color: white;
   }
+  
   
   /* Style for 'here' link inside paragraphs */
   article p a {
@@ -131,11 +132,21 @@
     }
   }
   
+  .footer-content {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
   footer small {
-    color: rgba(255, 255, 255, 0.6); /* Dimmed white */
-    font-size: 0.7em;                /* Smaller text */
     display: block;
-    margin-top: 2px;                 /* Less space above */
-    line-height: 1.2;                /* Tighter line spacing */
-  }  
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.65em;
+    margin-top: 4px;
+  }
     
