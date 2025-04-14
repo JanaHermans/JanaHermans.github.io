@@ -142,13 +142,13 @@
   
   footer p {
     margin: 0;
-    font-size: 1em;         /* Much smaller text */
+    font-size: 0.9em;         /* Much smaller text */
   }
   
   footer small {
     display: block;
     color: rgba(255, 255, 255, 0.4); /* Translucent white */
-    font-size: 0.4em;                /* 3x smaller than Thesis Trial */
+    font-size: 0.5em;                /* 3x smaller than Thesis Trial */
     margin-top: 2px;                 /* Tight spacing */
     line-height: 1.1;
   }  
