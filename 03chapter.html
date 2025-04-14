@@ -43,8 +43,14 @@
 
 <!-- Footer -->
 <footer>
-  <p>Footer</p>
+  <p id="footerYear">Thesis Trial 2025</p>
 </footer>
+
+<script>
+  // Get the current year and update the footer
+  const currentYear = new Date().getFullYear();
+  document.getElementById('footerYear').textContent = `Thesis Trial ${currentYear}`;
+</script>
 
 </body>
 </html>
