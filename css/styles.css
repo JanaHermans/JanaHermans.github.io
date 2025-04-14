@@ -142,7 +142,7 @@
   
   footer p {
     margin: 0;
-    font-size: 0.8em;         /* Much smaller text */
+    font-size: 1em;         /* Much smaller text */
   }
   
   footer small {
