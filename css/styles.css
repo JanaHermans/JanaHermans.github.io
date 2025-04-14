@@ -94,15 +94,6 @@
     height: auto;
   }
   
-  /* Footer */
-  footer {
-    background-color: #599c9f;
-    padding: 20px 10px; /* Increased vertical padding */
-    text-align: center;
-    color: white;
-  }
-  
-  
   /* Style for 'here' link inside paragraphs */
   article p a {
     color: #6596cf;
@@ -132,25 +123,36 @@
     }
   }
   
-  .footer-content {
-    display: inline-block;
+  /* Footer */
+  footer {
+    background-color: #599c9f;
+    padding: 30px 10px;       /* Taller footer for clean vertical center */
     text-align: center;
-    line-height: 1.4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;      /* Vertically center the content */
+    flex-direction: column;   /* Stack p and small vertically */
+  }
+  
+  .footer-content {
+    text-align: center;
+    line-height: 1.2;
   }
   
   footer p {
     margin: 0;
-    font-size: 1em;         /* More balanced size */
-    line-height: 1.2;
+    font-size: 0.9em;         /* Smaller, more subtle */
   }
   
   footer small {
     display: block;
     color: rgba(255, 255, 255, 0.4); /* Translucent white */
-    font-size: 0.33em;              /* About 3x smaller than 1em */
-    margin-top: 2px;                /* Tight spacing */
+    font-size: 0.3em;                /* 3x smaller than 0.9em */
+    margin-top: 2px;                 /* Close spacing */
     line-height: 1.1;
-  }  
+  }
+  
   
   
     
