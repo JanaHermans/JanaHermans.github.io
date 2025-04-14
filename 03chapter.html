@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="shortcut icon" type="image/png" href="thesis_icon.png">
 <head>
   <title>Chapter 3 - Thesis Trial</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="thesis_icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
   <style>
     * {
@@ -104,14 +104,16 @@
       color: white;
     }
 
-    /* 🎯 Style only links inside <p> elements (like the 'here' link) */
-    p a {
-      text-decoration: none;
-      color: #6596cf;
+    /* Style for 'here' link inside paragraphs */
+    article p a {
+      all: unset;
       font-weight: bold;
+      color: #6596cf;
+      cursor: pointer;
+      text-decoration: none;
     }
-
-    p a:hover {
+    
+    article p a:hover {
       color: #5077a8;
     }
 
