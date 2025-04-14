@@ -2,124 +2,130 @@
 <html lang="en">
   <link rel="shortcut icon" type="image/png" href="thesis_icon.png">
 <head>
-<title>Thesis trial :D</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <title>Thesis trial :D</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: 'Helvetica', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
-/* Hero image section */
-.hero {
-  background-image: url('image1.JPG');
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 1px 1px 1px #000;
-  text-align: center;
-  font-size: 48px;
-  font-weight: bold;
-}
+    /* Hero image section */
+    .hero {
+      background-image: url('image1.JPG');
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 1px #000;
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+    }
 
-/* Style the header */
-header {
-  background-color: #599c9f;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+    /* Header */
+    header {
+      background-color: #599c9f;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
 
-/* Navigation column */
-nav {
-  float: left;
-  width: 15%;
-  background: #cdeefc;
-  padding: 20px;
-  text-align: center;
-}
+    header p {
+      font-size: 16px;
+      margin: 0;
+    }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+    /* Section as flex layout */
+    section {
+      display: flex;
+      align-items: stretch;
+      min-height: calc(100vh - 70vh - 30px - 60px); /* hero + header + footer */
+    }
 
-nav ul li {
-  margin: 15px 0;
-}
+    /* Navigation column */
+    nav {
+      width: 15%;
+      background: #cdeefc;
+      padding: 20px;
+      text-align: center;
+    }
 
-nav ul li a {
-  display: inline-block;
-  background-color: #75abe1;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  width: 100%;
-  text-align: center;
-}
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-nav ul li a:hover {
-  background-color: #5a91c6;
-}
+    nav ul li {
+      margin: 15px 0;
+    }
 
-/* Main content area */
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: white;
-}
+    nav ul li a {
+      display: inline-block;
+      background-color: #75abe1;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+    }
 
-article img {
-  max-width: 100%;
-  height: auto;
-}
+    nav ul li a:hover {
+      background-color: #5a91c6;
+    }
 
-/* Clear floats */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Main content area */
+    article {
+      width: 85%;
+      padding: 20px;
+      background-color: white;
+    }
 
-/* Footer */
-footer {
-  background-color: #599c9f;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+    article img {
+      max-width: 100%;
+      height: auto;
+    }
 
-/* Responsive layout */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+    /* Footer */
+    footer {
+      background-color: #599c9f;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
 
-  .hero {
-    font-size: 32px;
-    padding: 20px;
-  }
-}
-</style>
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      section {
+        flex-direction: column;
+      }
+
+      nav, article {
+        width: 100%;
+      }
+
+      .hero {
+        font-size: 32px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -128,11 +134,12 @@ footer {
   Thesis Trial
 </div>
 
-<!-- Header and main content -->
+<!-- Header -->
 <header>
   <p>This is just a trial!</p>
 </header>
 
+<!-- Main content -->
 <section>
   <nav>
     <ul>
@@ -142,13 +149,14 @@ footer {
       <li><a href="https://janahermans.github.io/03chapter.html">Chapter 3</a></li>
     </ul>
   </nav>
-  
+
   <article>
     <p>Navigate through this empty shell of a thesis!</p>
     <img src="meme.JPG" alt="Meme Image">
   </article>
 </section>
 
+<!-- Footer -->
 <footer>
   <p>Footer</p>
 </footer>
