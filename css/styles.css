@@ -132,9 +132,10 @@
   }
   
   footer small {
-    color: rgba(255, 255, 255, 0.6); /* slightly dimmed white */
+    color: rgba(255, 255, 255, 0.6); /* Dimmed white */
+    font-size: 0.7em;                /* Smaller text */
     display: block;
-    font-size: 0.85em;
-    margin-top: 4px;
-  }
+    margin-top: 2px;                 /* Less space above */
+    line-height: 1.2;                /* Tighter line spacing */
+  }  
     
