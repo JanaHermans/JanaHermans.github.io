@@ -145,10 +145,11 @@
   
   footer small {
     display: block;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.65em;
-    margin-top: 2px; /* Slightly tighter spacing */
-    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.4); /* translucent white */
+    font-size: 0.3em;                /* 3x smaller if main is 1.2em */
+    margin-top: 1px;                 /* bring it very close */
+    line-height: 1.1;
   }
+  
   
     
