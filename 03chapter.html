@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
   <style>
-    /* Include your existing CSS here, or link to an external stylesheet */
     * {
       box-sizing: border-box;
     }
@@ -19,7 +18,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Hero image section */
     .hero {
       background-image: url('image1.JPG');
       height: 80vh;
@@ -36,7 +34,6 @@
       font-weight: bold;
     }
 
-    /* Header */
     header {
       background-color: #599c9f;
       padding: 60px;
@@ -50,14 +47,12 @@
       margin: 0;
     }
 
-    /* Section as flex layout */
     section {
       display: flex;
       align-items: stretch;
-      min-height: calc(100vh - 80vh - 30px - 10px); /* hero + header + footer */
+      min-height: calc(100vh - 80vh - 30px - 10px);
     }
 
-    /* Navigation column */
     nav {
       width: 15%;
       background: #d1e2f7;
@@ -91,7 +86,6 @@
       background-color: #5077a8;
     }
 
-    /* Main content area */
     article {
       width: 85%;
       padding: 20px;
@@ -103,7 +97,6 @@
       height: auto;
     }
 
-    /* Footer */
     footer {
       background-color: #599c9f;
       padding: 10px;
@@ -111,7 +104,17 @@
       color: white;
     }
 
-    /* Responsive layout */
+    /* 🎯 Style only links inside <p> elements (like the 'here' link) */
+    p a {
+      text-decoration: none;
+      color: #6596cf;
+      font-weight: bold;
+    }
+
+    p a:hover {
+      color: #5077a8;
+    }
+
     @media (max-width: 600px) {
       section {
         flex-direction: column;
@@ -130,17 +133,14 @@
 </head>
 <body>
 
-<!-- Hero section -->
 <div class="hero">
   Thesis Trial
 </div>
 
-<!-- Header -->
 <header>
   <p>This is just a trial!</p>
 </header>
 
-<!-- Main content -->
 <section>
   <nav>
     <ul>
@@ -158,7 +158,6 @@
   </article>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>Footer</p>
 </footer>
