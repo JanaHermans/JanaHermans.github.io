@@ -2,105 +2,139 @@
 <html lang="en">
   <link rel="shortcut icon" type="image/png" href="thesis_icon.png">
 <head>
-<title>Thesis trial :D</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Add Google Fonts for Human Sans-like font (e.g., 'Helvetica') -->
-<link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <title>Thesis trial :D</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: 'Helvetica', Arial, sans-serif; /* Use Helvetica or a similar font */
-  margin: 0;
-  padding: 0;
-}
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
-/* Style the header */
-header {
-  background-color: #bf95d0;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+    /* Hero image section */
+    .hero {
+      background-image: url('image1.JPG');
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 1px #000;
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+    }
 
-/* Create two columns/boxes that float next to each other */
-nav {
-  float: left;
-  width: 15%;
-  background: #cdeefc;
-  padding: 20px;
-  text-align: center; /* Center the content in the navigation */
-}
+    /* Header */
+    header {
+      background-color: #599c9f;
+      padding: 60px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+    header p {
+      font-size: 20px;
+      margin: 0;
+    }
 
-nav ul li {
-  margin: 15px 0;
-}
+    /* Flex layout for content */
+    section {
+      display: flex;
+      align-items: stretch;
+      min-height: calc(100vh - 80vh - 30px - 10px); /* hero + header + footer */
+    }
 
-/* Style the clickable buttons */
-nav ul li a {
-  display: inline-block;
-  background-color: #75abe1; /* Dark blue background for buttons */
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  width: 100%; /* Make buttons fill the width of the nav */
-  text-align: center; /* Center the text inside the buttons */
-}
+    /* Navigation */
+    nav {
+      width: 15%;
+      background: #d1e2f7;
+      padding: 20px;
+      text-align: center;
+    }
 
-nav ul li a:hover {
-  background-color: #5a91c6; /* Slightly darker blue on hover */
-}
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-/* Style the main content area */
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #fffafa;
-}
+    nav ul li {
+      margin: 15px 0;
+    }
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    nav ul li a {
+      display: inline-block;
+      background-color: #6596cf;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+    }
 
-/* Style the footer */
-footer {
-  background-color: #bf95d0;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+    nav ul li a:hover {
+      background-color: #5077a8;
+    }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    /* Main content */
+    article {
+      width: 85%;
+      padding: 20px;
+      background-color: white;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #599c9f;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      section {
+        flex-direction: column;
+      }
+
+      nav, article {
+        width: 100%;
+      }
+
+      .hero {
+        font-size: 32px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+
+<!-- Hero section -->
+<div class="hero">
+  Thesis Trial
+</div>
+
+<!-- Header -->
 <header>
-  <h2>Thesis trial</h2>
   <p>This is just a trial!</p>
 </header>
 
+<!-- Main layout -->
 <section>
   <nav>
     <ul>
@@ -110,7 +144,7 @@ footer {
       <li><a href="https://janahermans.github.io/03chapter.html">Chapter 3</a></li>
     </ul>
   </nav>
-  
+
   <article>
     <h1>Chapter 1</h1>
     <p>In Chapter 1, we investigate the prospective associations between prenatal maternal depression and child emotional, behavioural and cognitive development.</p>
@@ -118,6 +152,7 @@ footer {
   </article>
 </section>
 
+<!-- Footer -->
 <footer>
   <p>Footer</p>
 </footer>
