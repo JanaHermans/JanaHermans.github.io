@@ -122,8 +122,9 @@
     .hero {
       font-size: 32px;
       padding: 20px;
+      height: 60vh; /* <-- added this */
     }
-  }
+  }  
   
   /* Footer */
   footer {
